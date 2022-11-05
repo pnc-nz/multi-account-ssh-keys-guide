@@ -93,6 +93,9 @@ touch ~/.gitconfig
     email = default@domain.com
 
 # GitHub Personal - john-doe
+# Windows
+[includeIf "gitdir/i:c:/Users/USERNAME/src/github.com/john-doe/"]
+# MacOS/Linux
 [includeIf "gitdir:~/src/github.com/john-doe/"]
     path = ~/src/github.com/john-doe/.gitconfig
 
@@ -100,6 +103,9 @@ touch ~/.gitconfig
     insteadOf = git@github.com:john-doe/
 
 # GitHub Secondary - anonymous-john
+# Windows
+[includeIf "gitdir/i:c:/Users/USERNAME/src/github.com/anonymous-john/"]
+# MacOS/Linux
 [includeIf "gitdir:~/src/github.com/anonymous-john/"]
     path = ~/src/github.com/anonymous-john/.gitconfig
 
