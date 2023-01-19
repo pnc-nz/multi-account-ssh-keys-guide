@@ -205,7 +205,6 @@ cd ~/src/dev.azure.com/contoso/john-doe/
 git clone git@work.ssh.dev.azure.com:contoso/sample-repo.git
 ```
 
-
 # Existing Repositories - Update Remote(s)
 
 Check current remote with `git remote -v`
