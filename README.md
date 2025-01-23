@@ -1,9 +1,6 @@
-# multi-account-ssh-keys-guide
-A guide on how to manage multiple accounts with different SSH keys for each.
+# Multi-Account SSH Configuration Guide
 
-# Overview
-This guide is to help guide you through the configuration steps necessary to setup multi-account SSH keys with various remote source control tools. 
-To achieve this, we will create a mirrored directory hierarchy in the `~/.ssh/` folder as well as our `~/src/` folder.
+This guide will help you create and configure the necessary files to enable `git` to support multiple version control systems dynamically, based on folder hierarchy and remote URL.
 
 To achieve this, it will require the following steps to be completed:
   1. Update `~/.ssh/config`
@@ -11,8 +8,9 @@ To achieve this, it will require the following steps to be completed:
   3. Update the per account `.gitconfig` files
 
 
-## Example Source Control Accounts
-In the example below, our device will be configured in the scenario of 3 GitHub accounts and one Azure DevOps account.
+
+## Example VCS Accounts
+In the example below, our device will be configured in the scenario of three GitHub accounts and one Azure DevOps account.
 
 **GitHub**
 - Personal GitHub - john-doe@personal.com
@@ -23,14 +21,26 @@ In the example below, our device will be configured in the scenario of 3 GitHub 
 - Work Azure DevOps - john-doe@contoso.com
 
 
-## Example Directory Structure
+## Example Directory Structures
 ```
-.ssh/
+~/.ssh/
 │
 │ # Files
 ├── config
 │
 │ # Directories
+├── dev.azure.com/
+│   └── contoso/
+│      └── john-doe/
+│
+├── github.com/
+│   ├── john-doe/
+│   ├── anonymous-john/
+│   └── contoso/
+│      └── john-doe/
+
+
+~/src/
 ├── dev.azure.com/
 │   └── contoso/
 │      └── john-doe/
