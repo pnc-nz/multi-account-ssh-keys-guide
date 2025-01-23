@@ -52,15 +52,6 @@ In the example below, our device will be configured in the scenario of three Git
 │      └── john-doe/
 ```
 
-
-# Generate the SSH Configuration File
-If it doesn’t already exist:
-
-```bash
-touch ~/.ssh/config && chmod 600 ~/.ssh/config
-```
-
-
 # Generate Client SSH Keys
 Generate the SSH key-pairs for each account you want to configure:
 ```bash
