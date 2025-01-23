@@ -275,7 +275,8 @@ git remote set-url origin git@john-doe.github.com:john-doe/sample-repo.git
 # FAQ
 ## Mac/Linux
 ### `UseKeyChain` 
--  Within `~/.ssh/config` file, make sure to include `UseKeychain yes`
+- Within `~/.ssh/config` file, make sure to include `UseKeychain yes`
+- You will receive an error on Windows if you erraneously include this configuration key
 
 ## Windows
 
