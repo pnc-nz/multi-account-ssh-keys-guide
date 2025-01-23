@@ -283,7 +283,7 @@ git remote set-url origin git@john-doe.github.com:john-doe/sample-repo.git
 - Need to have path in a Windows friendly format when declaring `includeIf` gitdirs, 
 	- e.g. `c:\Users\pnc-nz\.\.\.\`
 	- VS Code requires case insensitive flag within your `includeIf`, specified as `gitdir/i:`
-	- `[includeIf "gitdir/i:c:/Users/eGo/src/github.com/pnc-nz/"]`
+	- `[includeIf "gitdir/i:c:/Users/USERNAME/src/github.com/john-doe/"]`
 	- See [this as reference](https://github.com/Microsoft/vscode/issues/62921#issuecomment-437693020)
 
 ### System Env Var `%HOMEPROFILE%` to work as `HOME`
