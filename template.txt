@@ -1,0 +1,20 @@
+
+
+Host {USERNAME}.{VCS}
+  HostName {VCS}
+  User git
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/{VCS}/{USERNAME}/{USERNAME}_id_rsa
+  IdentitiesOnly yes
+  UseKeychain yes	### MAC/LINUX ONLY
+
+
+
+Host john-doe.github.com
+  HostName github.com
+  User git
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/github.com/john-doe/john-doe_id_rsa
+  IdentitiesOnly yes
+  UseKeychain yes	### MAC/LINUX ONLY
+  
